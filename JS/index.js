@@ -1,22 +1,21 @@
-var A = 50;
-var B = 200;
-
-if (30 > 50)
-	console.log(A);
-if (20 > 10)
-	console.log(B);	
-
-var age = parseInt(prompt("digite sua idade"));
-if (age >= 65) {
-	document.body.append("voce é velho");
-} else {
-	if (age >=18) {
-		document.body.append("você é maior de idade");
- 	} else {
-		if (age <=12) {
-			document.body.append("voce é criança");
- 		} else {
- 			document.body.append("voce é adolescente");
- 		}
-  	}
+var Animal= prompt("Digite nome animal");
+var animalselected="";
+if (Animal==="Gato"){
+	animalselected="Cat";
+}else if (Animal==="Cachorro"){
+	animalselected="Dog";
+}else if (Animal==="Passaro"){
+	animalselected="Bird";
+}else if (Animal==="Sapo"){
+	animalselected="Frog";
+}else if (Animal==="Leao"){
+	animalselected="Lion";
+}else if (Animal==="Cavalo"){
+	animalselected="Horse";
 }
+	
+if (animalselected===""){
+	document.body.append("Sorry, I Couldn't find this animal!!!!")
+}else{
+	document.body.append("This animal in english is "+animalselected);}
+
